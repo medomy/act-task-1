@@ -1,0 +1,27 @@
+@import url('../../style.css');
+
+.login-sec{
+    flex: 1;
+    min-height: 100vh;
+    
+}
+.login-form{
+    padding: 8px;
+    border: 0.65px solid blueviolet;
+    border-radius: 8px;
+    
+}
+.login-form a{
+    width: 33%;
+    margin-top: 0.45rem;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.login-form a:hover{
+    color: palevioletred;
+}
+.login-form h4{
+    text-align: center;
+    font-weight: 700;
+}
