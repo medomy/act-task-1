@@ -1,48 +1,79 @@
 @import url('../../style.css');
 
-.login-sec{
-    flex: 1;
-    min-height: 100vh;
-    background: url('../images/background1.jpg') no-repeat center center fixed;
+.pic-sec{
+    background: url('../images/welcome.jpg') center center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    font-weight: 700;
+}
+.login-wrap a{
+    margin: 0px;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none!important;
+    color: var(--primary)!important;
+    font-weight: 600;
+    border: 0.75px var(--primary) solid;
+    width: 50%;
+    border-radius: 24px;
+
+}
+.login-wrap{
+    padding: 24px 32px!important;
+    min-height: 100vh;
+}
+.login-wrap h2, .login-wrap h4{
+    font-weight: 700;
+}
+.login-wrap label{
+    font-weight: 600;
+}
+.login-wrap button{
+    width: 100%;
+}
+.login-page{
+    min-height: 100vh;
+}
+.btn-primary{
+    background-color: var(--primary)!important;
+    border: transparent!important;
+}
+.form-check label{
+    font-size: 0.8rem;
+    color: darkgray;
+}
+.btn-light{
+    background-color: transparent!important;
+    padding: 0px!important;
+    color: var(--primary)!important;
+    font-weight: 600!important;
+    border: transparent!important;
 }
 
-/*.login-sec img{
-    z-index: -1;
-    position: absolute;
-    object-fit: fill;
-}*/
-.login-form{
-    padding: 16px;
-    border-radius: 12px;
-    background-color: rgba(255, 255, 159, 0.5);
-    box-shadow: 5px 5px rgba(255, 255, 159,0.8);
+.forgot-sec{
+    flex: 1;
     
 }
-.login-form a{
-    width: 33%;
-    margin-top: 0.45rem;
-    text-decoration: none;
-    color: blueviolet;
+.forgot-form{
+    padding: 16px;
 }
-
-.login-form a:hover{
-    color: palevioletred;
-}
-.login-form h4{
+.forgot-form h4{
     text-align: center;
     font-weight: 700;
-    color: blueviolet;
+    color: var(--primary);
 }
-label{
-    color: rgba(28, 71, 77);
+.forgot-form label{
+    font-weight: 600;
 }
-.login-form button{
+.forgot-form button{
     background-color: transparent!important;
     font-weight: 600;
-    transition: all 0.5s 0.5s ease-in-out;
 }
 
-.login-form button:hover{
-    background-color: blueviolet!important;
-}
+/*.form-check-input{
+    color: var(--primary)!important;
+}*/

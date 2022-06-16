@@ -5,7 +5,7 @@ export function blurFunction(event,node,requiredText , validateText , ...text){
     errorP.classList.add('text-danger');
     errorP.innerText = '';
     // for email input
-    if(event.target.id === 'emailsec'){
+    if(event.target.id === 'emailsec' || event.target.id === 'emailsecModal'){
         errorP.innerHTML= !requiredValidate(event.target.value)? requiredText
         : !validateEmail(event.target.value)? validateText 
         : '';
@@ -26,6 +26,8 @@ export function blurFunction(event,node,requiredText , validateText , ...text){
         : '';
         node.append(errorP); 
     }
+
+    console.log(node);
     
     
 
